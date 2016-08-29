@@ -9,6 +9,7 @@ fi
 export VIRTUALENV_PYTHON=/usr/local/bin/python3.5
 export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 source /usr/bin/virtualenvwrapper.sh
+source /etc/bash_completion.d/git
 
 # Useful Aliases
 alias runserver='python manage.py runserver 0.0.0.0:8000'
