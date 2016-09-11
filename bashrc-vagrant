@@ -30,6 +30,17 @@ localmanage() {
 alias loma=localmanage
 alias lose='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
 
+# Production environment shortcuts
+prodmanage() {
+    if [ $1 == "migrate" ] || [ $1 == "makemigrations" ]; then
+        echo "Do not run the '$1' command against production!"
+    else
+        python manage.py $* --settings=config.settings.prod
+    fi
+}
+alias prma=prodmanage
+alias prse='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
+
 # NPM Path
 export PATH=~/npm-global/bin:$PATH 2>&1
 npm config set prefix '~/npm-global' 2>&1
