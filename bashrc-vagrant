@@ -15,9 +15,19 @@ source /etc/bash_completion.d/git
 alias runserver='python manage.py runserver 0.0.0.0:8000'
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai -f terminal -g'
-alias dema='~/djash/dema.sh'
+
+# Dev environment shortcuts
+devmanage() {
+    python manage.py $* --settings=config.settings.dev
+}
+alias dema=devmanage
 alias dese='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.dev'
-alias loma='~/djash/loma.sh'
+
+# Local environment shortcuts
+localmanage() {
+    python manage.py $* --settings=config.settings.local
+}
+alias loma=localmanage
 alias lose='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
 
 # NPM Path
