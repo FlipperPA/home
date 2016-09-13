@@ -5,10 +5,16 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# User specific aliases and functions
+# emacs is the greatest OS ever
+export VISUAL=emacs
+export EDITOR="$VISUAL"
+
+# virtualenvwrapper Setup
 export VIRTUALENV_PYTHON=/usr/local/bin/python3.5
 export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 source /usr/bin/virtualenvwrapper.sh
+
+# git tab completion
 source /etc/bash_completion.d/git
 
 # Useful Aliases
