@@ -9,9 +9,14 @@ fi
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
+# Set up path (npm, virtualenvwrapper, postgres)
+export PATH=~/npm-global/bin:/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
+
+# NPM global directory under home
+npm config set prefix '~/npm-global'
+
 # virtualenvwrapper Setup
 export VIRTUALENV_PYTHON=/usr/local/bin/python3.5
-export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 source /usr/bin/virtualenvwrapper.sh
 
 # git tab completion
@@ -46,7 +51,3 @@ prodmanage() {
 }
 alias prma=prodmanage
 alias prse='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
-
-# NPM Path
-export PATH=~/npm-global/bin:$PATH 2>&1
-npm config set prefix '~/npm-global' 2>&1
