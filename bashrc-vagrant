@@ -15,6 +15,12 @@ export PATH=~/npm-global/bin:/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 # NPM global directory under home
 npm config set prefix '~/npm-global'
 
+# Enable color support of ls
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+fi
+
 # virtualenvwrapper Setup
 export VIRTUALENV_PYTHON=/usr/local/bin/python3.5
 source /usr/bin/virtualenvwrapper.sh
@@ -22,7 +28,10 @@ source /usr/bin/virtualenvwrapper.sh
 # git tab completion
 source /etc/bash_completion.d/git
 
-# Useful Aliases
+# Check the window size after each command and update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# Useful aliases
 alias runserver='python manage.py runserver 0.0.0.0:8000'
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai -f terminal -g'
