@@ -21,6 +21,9 @@ if [ "$TERM" != "dumb" ]; then
     alias ls='ls --color=auto'
 fi
 
+# Share the current directory on port 8000
+alias sharedir="python -m http.server 8000"
+
 # virtualenvwrapper Setup
 export VIRTUALENV_PYTHON=/usr/local/bin/python3.5
 source /usr/bin/virtualenvwrapper.sh
