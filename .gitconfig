@@ -19,7 +19,7 @@
     changed = green
     untracked = cyan
 [merge]
-	tool = emerge
+    tool = emerge
 [alias]
     co = checkout
     br = branch
