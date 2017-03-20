@@ -35,7 +35,6 @@ source /etc/bash_completion.d/git
 shopt -s checkwinsize
 
 # Useful aliases
-alias runserver='python manage.py runserver 0.0.0.0:8000'
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai -f terminal -g'
 
@@ -51,7 +50,7 @@ localmanage() {
     python manage.py $* --settings=config.settings.local
 }
 alias loma=localmanage
-alias lose='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
+alias lose='python manage.py runserver 0:8000 --settings=config.settings.local'
 
 # Production environment shortcuts
 prodmanage() {
