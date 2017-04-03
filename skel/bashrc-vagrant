@@ -62,3 +62,5 @@ prodmanage() {
 }
 alias prma=prodmanage
 alias prse='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
+
+alias jekyllserver='bundle exec jekyll serve --host=0.0.0.0 --watch --port=8080'
