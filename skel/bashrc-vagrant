@@ -40,28 +40,28 @@ alias ccat='pygmentize -O style=monokai -f terminal -g'
 
 # Dev environment shortcuts
 devmanage() {
-    python manage.py $* --settings=config.settings.dev
+    ENVIRONMENT=dev python manage.py $*
 }
 alias dema=devmanage
-alias dese='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.dev'
+alias dese='ENVIRONMENT=dev python manage.py runserver 0.0.0.0:8000'
 
 # Local environment shortcuts
 localmanage() {
-    python manage.py $* --settings=config.settings.local
+    ENVIRONMENT=local python manage.py $*
 }
 alias loma=localmanage
-alias lose='python manage.py runserver 0:8000 --settings=config.settings.local'
+alias lose='ENVIRONMENT=local python manage.py runserver 0:8000'
 
 # Production environment shortcuts
 prodmanage() {
     if [ $1 == "migrate" ] || [ $1 == "makemigrations" ]; then
         echo "Do not run the '$1' command against production!"
     else
-        python manage.py $* --settings=config.settings.prod
+        ENVIRONMENT=prod python manage.py $*
     fi
 }
 alias prma=prodmanage
-alias prse='python manage.py runserver 0.0.0.0:8000 --settings=config.settings.local'
+alias prse='ENVIRONMENT=prod python manage.py runserver 0.0.0.0:8000'
 
 alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
 
