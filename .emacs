@@ -15,3 +15,7 @@
 
 ;; Always use spaces.
 (setq-default indent-tab-mode nil)
+
+;; open up CFM / CFC files in HTML mode
+(add-to-list 'auto-mode-alist '("\\.cfm\\'" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.cfc\\'" . html-mode))
