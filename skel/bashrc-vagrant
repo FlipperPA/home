@@ -37,6 +37,7 @@ shopt -s checkwinsize
 # Useful aliases
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai -f terminal -g'
+alias gitprunemerged="git branch -r --merged | grep -v 'master\|develop' | sed 's/origin\///' | xargs -n 1 git push --delete origin && git remote prune origin"
 
 # Dev environment shortcuts
 devmanage() {
