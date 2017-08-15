@@ -64,5 +64,7 @@ alias prma=prodmanage
 alias prse='ENVIRONMENT=prod python manage.py runserver 0.0.0.0:8000'
 
 alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
+alias gitmerged_delete='git branch --merged | egrep -v "(^\*|master|develop|stage)" | xargs git branch -d && git branch -r --merged | grep -v "(^\*|master|develop|stage)" | sed "s/origin\///" | xargs -n 1 git push --delete origin'
+alias gitprunemerged="git branch -r --merged | grep -v 'master\|develop' | sed 's/origin\///' | xargs -n 1 git push --delete origin && git remote prune origin"
 
 alias jekyllserver='bundle exec jekyll serve --host=0.0.0.0 --watch --port=8080'
