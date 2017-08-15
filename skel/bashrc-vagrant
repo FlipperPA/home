@@ -36,7 +36,7 @@ shopt -s checkwinsize
 
 # Useful aliases
 alias menu='cat /etc/motd'
-alias ccat='pygmentize -O style=monokai -f terminal -g'
+alias ccat='pygmentize -O style=monokai,linenos=1 -f terminal -g'
 
 # Dev environment shortcuts
 devmanage() {
