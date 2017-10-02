@@ -7,4 +7,6 @@ git init
 git remote add origin git@github.com:FlipperPA/home.git
 git fetch
 git checkout -t origin/master
+cp skel/bashrc-vagrant .bashrc
+source .bashrc
 ```
