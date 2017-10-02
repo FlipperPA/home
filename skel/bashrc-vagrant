@@ -40,28 +40,28 @@ alias ccat='pygmentize -O style=monokai,linenos=1 -f terminal -g'
 
 # Dev environment shortcuts
 devmanage() {
-    ENVIRONMENT=dev python manage.py $*
+    ENV=dev python manage.py $*
 }
 alias dema=devmanage
-alias dese='ENVIRONMENT=dev python manage.py runserver 0.0.0.0:8000'
+alias dese='ENV=dev python manage.py runserver 0.0.0.0:8000'
 
 # Local environment shortcuts
 localmanage() {
-    ENVIRONMENT=local python manage.py $*
+    ENV=local python manage.py $*
 }
 alias loma=localmanage
-alias lose='ENVIRONMENT=local python manage.py runserver 0:8000'
+alias lose='ENV=local python manage.py runserver 0:8000'
 
 # Production environment shortcuts
 prodmanage() {
     if [ $1 == "migrate" ] || [ $1 == "makemigrations" ]; then
         echo "Do not run the '$1' command against production!"
     else
-        ENVIRONMENT=prod python manage.py $*
+        ENV=prod python manage.py $*
     fi
 }
 alias prma=prodmanage
-alias prse='ENVIRONMENT=prod python manage.py runserver 0.0.0.0:8000'
+alias prse='ENV=prod python manage.py runserver 0.0.0.0:8000'
 
 alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
 alias gitmerged_delete='git branch --merged | egrep -v "(^\*|master|develop|stage)" | xargs git branch -d && git branch -r --merged | grep -v "(^\*|master|develop|stage)" | sed "s/origin\///" | xargs -n 1 git push --delete origin'
