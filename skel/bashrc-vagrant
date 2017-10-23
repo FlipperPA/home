@@ -25,7 +25,7 @@ fi
 alias sharedir="python -m http.server 8000"
 
 # virtualenvwrapper Setup
-export VIRTUALENV_PYTHON=/usr/bin/python3.5
+export VIRTUALENV_PYTHON=/usr/bin/python3.6
 source /usr/bin/virtualenvwrapper.sh
 
 # git tab completion
