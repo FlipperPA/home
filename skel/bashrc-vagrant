@@ -53,6 +53,13 @@ localmanage() {
 alias loma=localmanage
 alias lose='ENV=local python manage.py runserver 0:8000'
 
+# Zappa environment shortcuts
+zappamanage() {
+    ENV=zappa python manage.py $*
+}
+alias zama=zappamanage
+alias zase='ENV=zappa python manage.py runserver 0:8000'
+
 # Production environment shortcuts
 prodmanage() {
     if [ $1 == "migrate" ] || [ $1 == "makemigrations" ]; then
