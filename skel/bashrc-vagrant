@@ -37,7 +37,7 @@ shopt -s checkwinsize
 # Useful aliases
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai,linenos=1 -f terminal -g'
-alias get_keys='cd ~ && scp -r tallen@cdldjango0101:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git'
+alias get_keys='cd ~ && scp -r tallen@cdl-django0101:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git'
 
 # Dev environment shortcuts
 devmanage() {
