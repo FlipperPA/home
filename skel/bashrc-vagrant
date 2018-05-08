@@ -37,14 +37,14 @@ shopt -s checkwinsize
 # Useful aliases
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai,linenos=1 -f terminal -g'
-alias get_keys='cd ~ && scp -r tallen@cdl-django0101:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git'
+alias get_keys='cd ~ && scp -r tallen@wrds-pub1-dev:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git'
 
 # Dev environment shortcuts
 devmanage() {
     ENV=dev python manage.py $*
 }
 alias dema=devmanage
-alias dese='ENV=dev python manage.py runserver 0.0.0.0:8000'
+alias dese='ENV=dev python manage.py runserver 0:8000'
 
 # Local environment shortcuts
 localmanage() {
@@ -69,7 +69,7 @@ prodmanage() {
     fi
 }
 alias prma=prodmanage
-alias prse='ENV=prod python manage.py runserver 0.0.0.0:8000'
+alias prse='ENV=prod python manage.py runserver 0:8000'
 
 alias gitohshit='git reflog && echo "To revert: git reset HEAD@{index}"'
 alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
