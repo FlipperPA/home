@@ -24,10 +24,6 @@ fi
 # Share the current directory on port 8000
 alias sharedir="python -m http.server 8000"
 
-# virtualenvwrapper Setup
-export VIRTUALENV_PYTHON=/usr/bin/python3.6
-source /usr/bin/virtualenvwrapper.sh
-
 # git tab completion
 source /etc/bash_completion.d/git
 
