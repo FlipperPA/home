@@ -9,11 +9,8 @@ fi
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
-# Set up path (npm, virtualenvwrapper, postgres)
-export PATH=~/npm-global/bin:/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
-
-# NPM global directory under home
-npm config set prefix '~/npm-global'
+# Set up path (postgres)
+export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 
 # Enable color support of ls
 if [ "$TERM" != "dumb" ]; then
