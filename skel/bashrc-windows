@@ -39,10 +39,11 @@ alias gitmerged_delete='git branch --merged | egrep -v "(^\*|master|develop|stag
 alias gitprunemerged="git branch -r --merged | grep -v 'master\|develop' | sed 's/origin\///' | xargs -n 1 git push --delete origin && git remote prune origin"
 
 # virtualenvwrapper-like aliases for venv
+alias python='winpty python.exe'
 export VENV_HOME=~/.venvs
-export VENV_PYTHON=/usr/bin/python3.6
+export VENV_PYTHON=python
 fn_workon() {
-    if [ -f "${VENV_HOME}/${1}/bin/activate" ]; then
+    if [ `ls ${VENV_HOME}/${1}/Scripts/activate ` ]; then
         export VENV_CURRENT="${VENV_HOME}/${1}"
         # Run commands before activation
         if [ -f "${VENV_CURRENT}/pre_activate.sh" ]; then
@@ -50,7 +51,7 @@ fn_workon() {
         fi
 
         echo "Activating venv ${1}..."
-        . "${VENV_CURRENT}/bin/activate"
+        . "${VENV_CURRENT}/Scripts/activate"
 
         # Run commands after activation
         if [ -f "${VENV_CURRENT}/post_activate.sh" ]; then
