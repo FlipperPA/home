@@ -1,34 +1,34 @@
 [user]
-        name = Allen, Timothy
-        email = tallen@wharton.upenn.edu
+    name = Allen, Timothy
+    email = tallen@wharton.upenn.edu
 [color]
-        branch = auto
-        diff = auto
-        status = auto
+    branch = auto
+    diff = auto
+    status = auto
 [color "branch"]
-        current = yellow reverse
-        local = yellow
-        remote = green
+    current = yellow reverse
+    local = yellow
+    remote = green
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red
-        new = cyan
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = cyan
 [color "status"]
-        added = yellow
-        changed = green
-        untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 [merge]
-	tool = emerge
+    tool = emerge
 [alias]
-        co = checkout
-        br = branch
-        ci = commit
-        st = status
-        unstage = reset HEAD --
-        last = log -1 HEAD
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
 [core]
-	autocrlf = true
-	editor = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe' -w
+    autocrlf = true
+    editor = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe' -w
 [winUpdater]
-	recentlySeenVersion = 2.21.0.windows.1
+    recentlySeenVersion = 2.21.0.windows.1
