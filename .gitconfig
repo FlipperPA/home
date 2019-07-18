@@ -1,6 +1,7 @@
 [user]
     name = Allen, Timothy
     email = tallen@wharton.upenn.edu
+
 [color]
     branch = auto
     diff = auto
@@ -18,8 +19,10 @@
     added = yellow
     changed = green
     untracked = cyan
+
 [merge]
     tool = emerge
+
 [alias]
     co = checkout
     br = branch
@@ -27,8 +30,10 @@
     st = status
     unstage = reset HEAD --
     last = log -1 HEAD
+    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
 [core]
     autocrlf = true
-    editor = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe' -w
+
 [winUpdater]
 	recentlySeenVersion = 2.22.0.windows.1

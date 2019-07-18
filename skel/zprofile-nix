@@ -1,9 +1,4 @@
-# .bashrc
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
+# .zprofile
 
 # emacs is the greatest OS ever
 export VISUAL=emacs
@@ -12,20 +7,8 @@ export EDITOR="$VISUAL"
 # Set up path (postgres)
 export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
 
-# Enable color support of ls
-if [ "$TERM" != "dumb" ]; then
-    eval "`dircolors -b`"
-    alias ls='ls --color=auto'
-fi
-
 # Share the current directory on port 8000
 alias sharedir="python -m http.server 8000"
-
-# git tab completion
-source /etc/bash_completion.d/git
-
-# Check the window size after each command and update the values of LINES and COLUMNS.
-shopt -s checkwinsize
 
 # Useful aliases
 alias menu='cat /etc/motd'
@@ -74,4 +57,4 @@ alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
 alias gitmerged_delete='git branch --merged | egrep -v "(^\*|master|develop|stage)" | xargs git branch -d && git branch -r --merged | grep -v "(^\*|master|develop|stage)" | sed "s/origin\///" | xargs -n 1 git push --delete origin'
 alias gitprunemerged="git branch -r --merged | grep -v 'master\|develop' | sed 's/origin\///' | xargs -n 1 git push --delete origin && git remote prune origin"
 
-# alias playbook='/usr/bin/ansible-playbook --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
+alias jekyllserver='bundle exec jekyll serve --host=0.0.0.0 --watch --port=8080'
