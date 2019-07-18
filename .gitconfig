@@ -31,4 +31,4 @@
     autocrlf = true
     editor = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe' -w
 [winUpdater]
-    recentlySeenVersion = 2.21.0.windows.1
+	recentlySeenVersion = 2.22.0.windows.1

@@ -83,7 +83,7 @@ fn_mkvirtualenv() {
 
         # Get the latest pip
         echo "Upgradging to latest pip..."
-        pip install --quiet --upgrade pip
+        pip3 install --quiet --upgrade pip3
     fi
 }
 alias mkvirtualenv=fn_mkvirtualenv
