@@ -1,69 +1,11 @@
 # .bashrc
 
 source ~/skel/bashrc-include-base.sh
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
-
-# emacs is the greatest OS ever
-export VISUAL=emacs
-export EDITOR="$VISUAL"
+source ~/skel/bashrc-include-linux.sh
+source ~/skel/bashrc-include-django.sh
+source ~/skel/bashrc-include-git.sh
 
 # Set up path (postgres)
 export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
-
-# Enable color support of ls
-if [ "$TERM" != "dumb" ]; then
-    eval "`dircolors -b`"
-    alias ls='ls --color=auto'
-fi
-
-# git tab completion
-source /etc/bash_completion.d/git
-
-# Check the window size after each command and update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
-# Dev environment shortcuts
-devmanage() {
-    ENV=dev python manage.py $*
-}
-alias dema=devmanage
-alias dese='ENV=dev python manage.py runserver 0:8000'
-
-# Local environment shortcuts
-localmanage() {
-    ENV=local python manage.py $*
-}
-alias loma=localmanage
-alias lose='ENV=local python manage.py runserver 0:8000'
-
-# Zappa environment shortcuts
-zappamanage() {
-    ENV=zappa python manage.py $*
-}
-alias zama=zappamanage
-alias zase='ENV=zappa python manage.py runserver 0:8000'
-
-# Production environment shortcuts
-prodmanage() {
-    if [ $1 == "migrate" ] || [ $1 == "makemigrations" ]; then
-        echo "Do not run the '$1' command against production!"
-    else
-        ENV=prod python manage.py $*
-    fi
-}
-alias prma=prodmanage
-alias prse='ENV=prod python manage.py runserver 0:8000'
-
-# Kill any Django runserver instances for the current user
-alias kill-runserver="ps -eaf | grep 'manage.py runserver' | grep "'$USER'" | grep -v grep | awk '{print "'$2'"}' | xargs kill -9"
-
-alias gitohshit='git reflog && echo "To revert: git reset HEAD@{index}"'
-alias gitmerged='git branch --merged | egrep -v "(^\*|master|develop|stage)"'
-alias gitmerged_delete='git branch --merged | egrep -v "(^\*|master|develop|stage)" | xargs git branch -d && git branch -r --merged | grep -v "(^\*|master|develop|stage)" | sed "s/origin\///" | xargs -n 1 git push --delete origin'
-alias gitprunemerged="git branch -r --merged | grep -v 'master\|develop' | sed 's/origin\///' | xargs -n 1 git push --delete origin && git remote prune origin"
 
 # alias playbook='/usr/bin/ansible-playbook --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
