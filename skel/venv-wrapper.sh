@@ -61,7 +61,7 @@ fn_lsvirtualenv() {
     if [ -z "${VENV_HOME}" ]; then
         echo "VENV_HOME is not set; can not show venvs."
     else
-        ls "${VENV_HOME}/" -1
+        ls -1 "${VENV_HOME}/"
     fi
 }
 alias lsvirtualenv=fn_lsvirtualenv
