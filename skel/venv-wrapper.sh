@@ -1,6 +1,3 @@
-export VENV_HOME=~/.venvs
-export VENV_PYTHON=/usr/bin/python3.6
-
 fn_workon() {
     if [ -f "${VENV_HOME}/${1}/bin/activate" ]; then
         export VENV_CURRENT="${VENV_HOME}/${1}"
