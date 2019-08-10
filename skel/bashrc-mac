@@ -1,6 +1,11 @@
 # .bashrc
 
+export VENV_HOME=~/.venvs
+export VENV_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
+
 source ~/skel/bashrc-include-base.sh
 source ~/skel/bashrc-include-linux.sh
 source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
+
+unalias ls
