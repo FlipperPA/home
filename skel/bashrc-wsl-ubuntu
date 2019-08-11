@@ -1,0 +1,12 @@
+# .bashrc
+
+export VENV_HOME=~/.venvs
+export VENV_PYTHON=/usr/bin/python3.6
+
+source ~/skel/bashrc-include-base.sh
+source ~/skel/bashrc-include-linux.sh
+source ~/skel/bashrc-include-django.sh
+source ~/skel/bashrc-include-git.sh
+source ~/skel/venv-wrapper.sh
+
+unalias ls
