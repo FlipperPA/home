@@ -1,7 +1,7 @@
 # home
 An example of my home directory. To init in a non-empty home directory:
 
-## Vagrant
+### Vagrant
 ```
 cd ~
 git init
@@ -12,7 +12,7 @@ cp skel/bashrc-vagrant .bashrc
 source .bashrc
 ```
 
-## WSL-Ubuntu
+### WSL-Ubuntu
 ```
 cd ~
 git init
@@ -24,7 +24,7 @@ source .bashrc
 . skel/install-wsl-ubuntu.sh
 ```
 
-# zsh
+### zsh
 Switching over to zsh from bash.
 
 ```
