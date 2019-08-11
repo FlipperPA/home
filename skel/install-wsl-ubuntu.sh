@@ -1,3 +1,4 @@
+touch .ssh/authorized_keys
 sudo apt update
 sudo apt install python3-pip
 sudo umount /mnt/c
