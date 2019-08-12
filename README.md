@@ -24,17 +24,13 @@ source .bashrc
 . skel/install-wsl-ubuntu.sh
 ```
 
-### zsh
-Switching over to zsh from bash.
-
+### MacOS
 ```
 cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/master
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-chsh -s /bin/zsh
-cp skel/zprofile-nix .zprofile
-zsh
+cp skel/bashrc-mac .bashrc
+source .bashrc
 ```
