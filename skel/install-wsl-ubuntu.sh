@@ -12,12 +12,12 @@ sudo apt -y install python3-pip python3-venv git bash-completion postgresql-clie
 sudo umount /mnt/c
 sudo mount -t drvfs C: /mnt/c -o metadata
 
-# Create a projects directory in the Ubuntu home user's home directory to the Windows C:\ drive.
-mkdir -p /mnt/c/projects
-ln -s /mnt/c/projects projects
+# Create projects and venvs symlinks in the Ubuntu home user's home directory to the Windows C:\ drive.
+mkdir -p /mnt/c/dev/projects
+ln -s /mnt/c/dev/projects projects
+mkdir -p /mnt/c/dev/venvs
+ln -s /mnt/c/dev/venvs venvs
 
-# Install PostgreSQL
-# echo "deb http://apt.postgresql.org/pub/repos/apt/ 18.04-pgdg main" | sudo tee -a /etc/apt/sources.list.d/pgdg.list
-# wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-# sudo apt-get update
-# sudo apt install 
+# Start and Enable PostgreSQL
+sudo service postgresql start
+sudo systemctl enable postgresql

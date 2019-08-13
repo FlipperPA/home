@@ -1,6 +1,6 @@
 # .bashrc
 
-export VENV_HOME=~/.venvs
+export VENV_HOME=~/venvs
 export VENV_PYTHON=/usr/bin/python3.6
 
 source ~/skel/bashrc-include-base.sh
