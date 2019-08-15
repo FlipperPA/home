@@ -30,8 +30,7 @@ git fetch
 git checkout -t origin/master
 cp skel/bashrc-wsl-ubuntu .bashrc
 source .bashrc
-sudo ls
-. skel/install-wsl-ubuntu.sh
+sudo . skel/install-wsl-ubuntu.sh
 ```
 
 ### MacOS
