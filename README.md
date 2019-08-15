@@ -16,7 +16,7 @@ source .bashrc
 
 After installing Ubuntu from the Windows Store, you'll want to add an exclusion to virus checking for the root folder. This will lead to a huge increase in performance because of file I/O:
 
-* Using exploring, navigate to the `rootfs` folder. I.e.: `C:\Users\username\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_[hash]\LocalState\rootfs`. Copy this path from the nav bar.
+* Using exploring, navigate to the `rootfs` folder. I.e.: `C:\Users\username\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_[UUID]\LocalState\rootfs`. Copy this path from the nav bar.
 * From the start menu, navigate to `Windows Security -> Virus & threat protection -> Manage settings -> Add or remove exclusions`
 * Add a folder exclusion with the path you copied.
 
