@@ -21,9 +21,3 @@ ln -s /mnt/c/dev/venvs venvs
 # Start and Enable PostgreSQL
 sudo service postgresql start
 sudo systemctl enable postgresql
-
-# Reminder to add exclusion!
-echo "Done! Don't forget to add the Ubuntu root folder to exclusions."
-echo "The root folder will be something like 'C:\Users\tallen\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs'."
-echo "Windows Security -> Virus & threat protection -> Manage settings -> Add or remove exclusions"
-echo "Good luck!"
