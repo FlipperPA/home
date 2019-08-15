@@ -34,4 +34,5 @@ git fetch
 git checkout -t origin/master
 cp skel/bashrc-mac .bashrc
 source .bashrc
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
