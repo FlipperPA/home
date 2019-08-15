@@ -17,6 +17,9 @@ mkdir -p /mnt/c/dev/projects
 ln -s /mnt/c/dev/projects projects
 mkdir -p /mnt/c/dev/venvs
 ln -s /mnt/c/dev/venvs venvs
+sudo chown -R tallen:tallen .ssh
+sudo chown -R tallen:tallen projects
+sudo chown -R tallen:tallen venvs
 
 # Start and Enable PostgreSQL
 sudo service postgresql start
