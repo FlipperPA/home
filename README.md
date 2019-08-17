@@ -30,6 +30,10 @@ git fetch
 git checkout -t origin/master
 cp skel/bashrc-wsl-ubuntu .bashrc
 source .bashrc
+mkdir -p projects
+mkdir -p venvs
+mkdir -p .ssh
+touch .ssh/authorized_keys
 sudo -s source skel/install-wsl-ubuntu.sh
 ```
 
