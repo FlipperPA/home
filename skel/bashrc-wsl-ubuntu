@@ -10,3 +10,4 @@ source ~/skel/bashrc-include-git.sh
 source ~/skel/venv-wrapper.sh
 
 unalias ls
+sudo service postgresql start
