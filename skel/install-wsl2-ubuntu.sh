@@ -2,7 +2,7 @@
 # Sets up the Windows Subsystem for Linux version of Ubuntu 18.04 for Django development
 # Install PostgreSQL, Python packages for venv creation
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10
+sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
