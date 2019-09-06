@@ -65,5 +65,6 @@ git fetch
 git checkout -t origin/master
 cp skel/bashrc-mac .bashrc
 source .bashrc
+printf "\nsource ~/.bashrc\n" >> .bash_profile
 . skel/install-mac.sh
 ```
