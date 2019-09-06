@@ -31,6 +31,19 @@ touch .ssh/authorized_keys
 sudo -s source skel/install-wsl2-ubuntu.sh
 ```
 
+### MacOS
+```
+cd ~
+git init
+git remote add origin https://github.com/FlipperPA/home.git
+git fetch
+git checkout -t origin/master
+cp skel/bashrc-mac .bashrc
+source .bashrc
+printf "\nsource ~/.bashrc\n" >> .bash_profile
+. skel/install-mac.sh
+```
+
 ### WSL Ubuntu
 
 After installing Ubuntu from the Windows Store, you'll want to add an exclusion to virus checking for the root folder. This will lead to a huge increase in performance because of file I/O:
@@ -54,17 +67,4 @@ mkdir -p venvs
 mkdir -p .ssh
 touch .ssh/authorized_keys
 sudo -s source skel/install-wsl-ubuntu.sh
-```
-
-### MacOS
-```
-cd ~
-git init
-git remote add origin https://github.com/FlipperPA/home.git
-git fetch
-git checkout -t origin/master
-cp skel/bashrc-mac .bashrc
-source .bashrc
-printf "\nsource ~/.bashrc\n" >> .bash_profile
-. skel/install-mac.sh
 ```
