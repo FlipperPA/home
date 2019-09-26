@@ -1,4 +1,5 @@
 {
+    "$schema": "https://aka.ms/terminal-profiles-schema",
     "globals" : 
     {
         "alwaysShowTabs" : true,
