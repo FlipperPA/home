@@ -9,6 +9,11 @@ sudo chmod 644 /etc/sudoers
 sudo sed -i 's/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
 sudo chmod 440 /etc/sudoers
 
+# Allow connections from Windows host OS to WSL-2 Ubuntu PostgreSQL
+echo "listen_addresses = '*'" >> /etc/postgresql/10/main/postgresql.conf
+echo "# Allow connecting to postgresql from outside WSL-2 Ubuntu" >> /etc/postgresql/10/main/pg_hba.conf
+echo "host	all	all	all	trust" >> /etc/postgresql/10/main/pg_hba.conf
+
 # Start and Enable PostgreSQL
 sudo service postgresql start
 sudo systemctl enable postgresql
