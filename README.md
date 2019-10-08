@@ -11,13 +11,13 @@ git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/master
-cp skel/bashrc-wsl-ubuntu .bashrc
-source .bashrc
 mkdir -p projects
 mkdir -p venvs
 mkdir -p .ssh
 touch .ssh/authorized_keys
+cp skel/bashrc-wsl-ubuntu .bashrc
 sudo -s source skel/install-wsl2-ubuntu.sh
+source .bashrc
 ```
 
 ### MacOS
