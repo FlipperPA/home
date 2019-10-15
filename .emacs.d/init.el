@@ -30,7 +30,7 @@
 (global-linum-mode t) ;; enable line numbers globally
 
 ;; enable visual feedback on selections
-;(setq transient-mark-mode t)
+(setq transient-mark-mode t)
 
 ;; default to better frame titles
 (setq frame-title-format (concat  "%b - emacs@" (system-name)))
@@ -62,3 +62,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Activate elpy for Python formatting
+(elpy-enable)
