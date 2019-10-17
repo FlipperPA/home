@@ -11,3 +11,5 @@ source ~/skel/venv-wrapper.sh
 
 unalias ls
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+echo "To start PostgreSQL: postgres -D /usr/local/var/postgres"
