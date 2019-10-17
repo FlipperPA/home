@@ -33,7 +33,7 @@
     hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [core]
-    autocrlf = true
+    autocrlf = false
 
 [winUpdater]
-	recentlySeenVersion = 2.22.0.windows.1
+    recentlySeenVersion = 2.22.0.windows.1
