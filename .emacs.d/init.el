@@ -65,3 +65,10 @@
 
 ;; Activate elpy for Python formatting
 (elpy-enable)
+
+;; Don't litter up everything with backup files
+(setq make-backup-files nil)
+
+;; Open up CFM / CFC files in HTML mode
+(add-to-list 'auto-mode-alist '("\\.cfm\\'" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.cfc\\'" . html-mode))
