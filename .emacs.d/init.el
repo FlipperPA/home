@@ -2,7 +2,6 @@
 
 ;; INSTALL PACKAGES
 ;; --------------------------------------
-
 (require 'package)
 
 (add-to-list 'package-archives
@@ -50,6 +49,7 @@
 ;; open up CFM / CFC files in HTML mode
 (add-to-list 'auto-mode-alist '("\\.cfm\\'" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.cfc\\'" . html-mode))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,9 +66,10 @@
 ;; Activate elpy for Python formatting
 (elpy-enable)
 
+;; Enable Flycheck
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
 ;; Don't litter up everything with backup files
 (setq make-backup-files nil)
-
-;; Open up CFM / CFC files in HTML mode
-(add-to-list 'auto-mode-alist '("\\.cfm\\'" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.cfc\\'" . html-mode))
