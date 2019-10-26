@@ -18,9 +18,7 @@ touch .ssh/authorized_keys
 cp skel/bashrc-wsl-ubuntu .bashrc
 sudo -s source skel/install-wsl2-ubuntu.sh
 source .bashrc
-cd ~/projects
-mkvirtualenv pypi
-pip install setuptools twine wheel setuptools-scm pypi-alias
+cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
 ### MacOS
@@ -34,9 +32,7 @@ cp skel/bashrc-mac .bashrc
 source .bashrc
 printf "\nsource ~/.bashrc\n" >> .bash_profile
 . skel/install-mac.sh
-cd ~/projects
-mkvirtualenv pypi
-pip install setuptools twine wheel setuptools-scm pypi-alias
+cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
 ### Vagrant
@@ -48,7 +44,5 @@ git fetch
 git checkout -t origin/master
 cp skel/bashrc-vagrant .bashrc
 source .bashrc
-cd ~/projects
-mkvirtualenv pypi
-pip install setuptools twine wheel setuptools-scm pypi-alias
+cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
