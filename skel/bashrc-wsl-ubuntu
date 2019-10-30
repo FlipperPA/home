@@ -2,6 +2,7 @@
 
 export VENV_HOME=~/venvs
 export VENV_PYTHON=/usr/bin/python3.6
+export DJDT=1
 
 source ~/skel/bashrc-include-base.sh
 source ~/skel/bashrc-include-linux.sh
