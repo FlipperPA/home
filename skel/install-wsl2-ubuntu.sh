@@ -1,8 +1,12 @@
 #!/bin/bash
 # Sets up the Windows Subsystem for Linux version of Ubuntu 18.04 for Django development
+
+# Install NodeJS and NPM repository
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+
 # Install PostgreSQL, Python packages for venv creation
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate
+sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate nodejs
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
