@@ -16,7 +16,7 @@ mkdir -p venvs
 mkdir -p .ssh
 touch .ssh/authorized_keys
 cp skel/bashrc-wsl-ubuntu .bashrc
-sudo -s source skel/install-wsl2-ubuntu.sh
+sudo -s source skel/install-wsl-ubuntu.sh
 source .bashrc
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
