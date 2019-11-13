@@ -1,8 +1,14 @@
 # .bashrc
 
+# Set up variables for venvwrapper
 export VENV_HOME=~/venvs
 export VENV_PYTHON=/usr/bin/python3.6
+
+# Turn Django Debug Toolbar On
 export DJDT=1
+
+# Set the locale for Click
+export LC_ALL=en_US.utf8
 
 source ~/skel/bashrc-include-base.sh
 source ~/skel/bashrc-include-linux.sh
