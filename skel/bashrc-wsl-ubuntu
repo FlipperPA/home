@@ -16,5 +16,5 @@ source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 source ~/skel/venv-wrapper.sh
 
-sudo ntpdate time.windows.com
+# sudo ntpdate time.windows.com
 sudo service postgresql start
