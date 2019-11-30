@@ -6,7 +6,7 @@ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
 # Install PostgreSQL, Python packages for venv creation
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate nodejs
+sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate tdsodbc
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
