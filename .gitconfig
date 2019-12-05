@@ -20,6 +20,9 @@
     changed = green
     untracked = cyan
 
+[pull]
+    default = matching
+
 [push]
     default = matching
 
