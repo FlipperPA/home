@@ -21,10 +21,10 @@
     untracked = cyan
 
 [pull]
-    default = matching
+    default = current
 
 [push]
-    default = matching
+    default = current
 
 [merge]
     tool = emerge
