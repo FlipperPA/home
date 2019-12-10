@@ -243,6 +243,8 @@
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
+            "suppressApplicationTitle": true,
+            "tabTitle": "Ubuntu",
             "useAcrylic" : false
         },
         {
@@ -260,6 +262,8 @@
             "name" : "pub1-dev",
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
+            "suppressApplicationTitle": true,
+            "tabTitle": "pub1-dev",
             "useAcrylic" : false
         },
         {
@@ -279,6 +283,8 @@
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
+            "suppressApplicationTitle": true,
+            "tabTitle": "PowerShell",
             "useAcrylic" : false
         },
         {
@@ -297,7 +303,15 @@
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
+            "suppressApplicationTitle": true,
+            "tabTitle": "cmd",
             "useAcrylic" : true
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
         }
     ],
     "schemes" : 
