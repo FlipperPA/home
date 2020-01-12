@@ -1,39 +1,45 @@
 [user]
-    name = Allen, Timothy
-    email = tallen@wharton.upenn.edu
+name = Allen, Timothy
+email = tallen@wharton.upenn.edu
 
 [color]
-    branch = auto
-    diff = auto
-    status = auto
+branch = auto
+diff = auto
+status = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+current = yellow reverse
+local = yellow
+remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red
-    new = cyan
+meta = yellow bold
+frag = magenta bold
+old = red
+new = cyan
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+added = yellow
+changed = green
+untracked = cyan
+
+[pull]
+default = current
+
+[push]
+default = current
 
 [merge]
-    tool = emerge
+tool = emerge
 
 [alias]
-    co = checkout
-    br = branch
-    ci = commit
-    st = status
-    unstage = reset HEAD --
-    last = log -1 HEAD
-    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+co = checkout
+br = branch
+ci = commit
+st = status
+unstage = reset HEAD --
+last = log -1 HEAD
+hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [core]
-    autocrlf = false
+autocrlf = false
 
 [winUpdater]
-    recentlySeenVersion = 2.22.0.windows.1
+recentlySeenVersion = 2.22.0.windows.1
