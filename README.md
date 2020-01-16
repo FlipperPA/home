@@ -21,6 +21,21 @@ source .bashrc
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
+#### Installing Newer Versions of Python on Ubuntu 16 or 18
+
+```
+# Update apt and install SPC
+sudo apt update
+sudo apt install software-properties-common
+
+# Add the respository for newer Python
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+# Update again, and install Python 3.7
+sudo apt update
+sudo apt install python3.7
+```
+
 ### MacOS
 ```
 cd ~
