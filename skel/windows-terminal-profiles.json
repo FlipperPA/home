@@ -36,7 +36,7 @@
                 "tabTitle": "Ubuntu"
             },
             {
-                "commandline": "ssh tallen@wrds-pub1-dev.wharton.upenn.edu",
+                "commandline": "ssh -o \"ServerAliveInterval 60\" -o \"ServerAliveCountMax 2\" tallen@wrds-pub1-dev.wharton.upenn.edu",
                 "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b8a4b}",
                 "name": "pub1-dev",
                 "tabTitle": "pub1-dev"
