@@ -11,4 +11,6 @@ source ~/skel/venv-wrapper.sh
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 echo "To start PostgreSQL: postgres -D /usr/local/var/postgres"
