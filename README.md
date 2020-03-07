@@ -5,7 +5,7 @@ An example of my home directory. To init in a non-empty home directory:
 
 WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. As of this writing, it requires to be on the Windows Inside program Fast Circle. See: https://scotch.io/bar-talk/trying-the-new-wsl-2-its-fast-windows-subsystem-for-linux
 
-```
+```bash
 cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
@@ -21,8 +21,23 @@ source .bashrc
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
-### MacOS
+#### Installing Newer Versions of Python on Ubuntu 16 or 18
+
+```bash
+# Update apt and install SPC
+sudo apt update
+sudo apt install software-properties-common
+
+# Add the respository for newer Python
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+# Update again, and install Python 3.7
+sudo apt update
+sudo apt install python3.7
 ```
+
+### MacOS
+```bash
 cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
@@ -36,7 +51,7 @@ cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setupto
 ```
 
 ### Vagrant
-```
+```bash
 cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
