@@ -4,6 +4,10 @@
 # Install NodeJS and NPM repository
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
+# Temporary fix for pasting into IPython
+mkdir -p ~/.ipython/profile_default/
+cp ~/skel/ipython_config.py ~/.ipython/profile_default/
+
 # Install PostgreSQL, Python packages for venv creation
 sudo apt update
 sudo apt -y install python3-pip python3-venv git bash-completion postgresql-client-10 postgresql-10 postgresql-server-dev-10 ntpdate tdsodbc
