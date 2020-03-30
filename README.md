@@ -31,9 +31,9 @@ sudo apt install software-properties-common
 # Add the respository for newer Python
 sudo add-apt-repository ppa:deadsnakes/ppa
 
-# Update again, and install Python 3.7
+# Update again, and install Python 3.8
 sudo apt update
-sudo apt install python3.7
+sudo apt install python3.8 python3.8-dev python3.8-venv python3.8-distutils
 ```
 
 ### MacOS
