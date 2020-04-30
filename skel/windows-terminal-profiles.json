@@ -1,17 +1,14 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "globals": 
-    {
-        "alwaysShowTabs": true,
-        "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-        "initialCols": 120,
-        "initialRows": 30,
-        "copyOnSelect": true,
-        "showTabsInTitlebar": true,
-        "showTerminalTitleInTitlebar": true,
-        "snapToGridOnResize": false,
-        "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
-    },
+    "alwaysShowTabs": true,
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "initialCols": 120,
+    "initialRows": 30,
+    "copyOnSelect": true,
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "snapToGridOnResize": false,
+    "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502",
     "profiles": {
         "defaults": {
             "acrylicOpacity": 0.5,
