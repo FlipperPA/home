@@ -1,9 +1,9 @@
 # home
 An example of my home directory. To init in a non-empty home directory:
 
-### WSL-2 Ubuntu
+### WSL-2 Ubuntu 20
 
-WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. As of this writing, it requires to be on the Windows Inside program Fast Circle. See: https://scotch.io/bar-talk/trying-the-new-wsl-2-its-fast-windows-subsystem-for-linux
+WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. WSL-10 is now the default on Windows 10, since patch 2004 in May, 2020. See: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 
 ```bash
 cd ~
