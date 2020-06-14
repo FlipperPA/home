@@ -10,7 +10,7 @@ cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
-git checkout -t origin/master
+git checkout -t origin/main
 mkdir -p projects
 mkdir -p venvs
 mkdir -p .ssh
@@ -42,7 +42,7 @@ cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
-git checkout -t origin/master
+git checkout -t origin/main
 cp skel/bashrc-mac .bashrc
 source .bashrc
 printf "\nsource ~/.bashrc\n" >> .bash_profile
@@ -56,7 +56,7 @@ cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
-git checkout -t origin/master
+git checkout -t origin/main
 cp skel/bashrc-vagrant .bashrc
 source .bashrc
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
