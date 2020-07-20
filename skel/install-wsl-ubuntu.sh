@@ -1,21 +1,13 @@
 #!/bin/bash
 # Sets up the Windows Subsystem for Linux version of Ubuntu 20.04 for Django development
 
-# Install NodeJS and NPM repository
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-
 # Temporary fix for pasting into IPython with Windows Terminal
 mkdir -p ~/.ipython/profile_default/
 cp ~/skel/ipython_config.py ~/.ipython/profile_default/
 
 # Install Python and other essential packages
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc
-
-# Install PostgreSQL 12
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
-sudo apt -y install postgresql-12 postgresql-client-12 postgresql-server-dev-12
+sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc postgresql postgresql-contrib nodejs
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
