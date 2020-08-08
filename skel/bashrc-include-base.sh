@@ -13,3 +13,6 @@ alias copycode='pygmentize -O style=monokai -f rtf -g'
 
 # Get keys, save local authorized keys and append
 alias get_keys='cd ~ && cp .ssh/authorized_keys .ssh/authorized_keys.orig && scp -r tallen@wrds-pub1-dev.wharton.upenn.edu:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git && cat .ssh/authorized_keys.orig >> .ssh/authorized_keys'
+
+# Install StarShop with: `curl -fsSL https://starship.rs/install.sh | bash` or `brew install starship`
+eval "$(starship init bash)"
