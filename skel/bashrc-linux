@@ -5,7 +5,4 @@ source ~/skel/bashrc-include-linux.sh
 source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 
-# Set up path (postgres)
-export PATH=/usr/local/bin:/usr/pgsql-9.5/bin:$PATH
-
 # alias playbook='/usr/bin/ansible-playbook --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
