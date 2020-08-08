@@ -50,14 +50,14 @@ printf "\nsource ~/.bashrc\n" >> .bash_profile
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
-### Vagrant
+### Generic Linux Server
 ```bash
 cd ~
 git init
 git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/main
-cp skel/bashrc-vagrant .bashrc
+cp skel/bashrc-linux .bashrc
 source .bashrc
 cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
 ```
