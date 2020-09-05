@@ -5,6 +5,8 @@
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarGlomLevel -Value 2
 # Set the Windows Taskbar to use small icons
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarSmallIcons -Value 1
+# Disable Cortana Button
+Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name ShowCortanaButton -Value 0
 
 # Finally, stop explorer; it will auto-restart
 Get-Process -Name explorer | Stop-Process
