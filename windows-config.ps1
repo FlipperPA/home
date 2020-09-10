@@ -2,8 +2,10 @@
 # It should be run in Administrator mode from PowerShell.
 
 # Uninstall the crapware that comes with Windows 10 - leave the Store
+Write-Output("Uninstalling all the packaged crapware; leaving the Windows Store...")
 DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename | % {$_ -replace("PackageName : ", "")} | select-string "^((?!WindowsStore).)*$" | ForEach-Object {Remove-AppxPackage -allusers -package $_}
 
+Write-Output("Setting up the taskbar...")
 # Set the Windows Taskbar to never combine items (Windows 7 style)
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarGlomLevel -Value 2
 # Set the Windows Taskbar to use small icons
