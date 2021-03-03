@@ -1,13 +1,15 @@
-#!/bin/bash
+\0;10;1c#!/bin/bash
 # Sets up the Windows Subsystem for Linux version of Ubuntu 20.04 for Django development
 
 # Temporary fix for pasting into IPython with Windows Terminal
 mkdir -p ~/.ipython/profile_default/
 cp ~/skel/ipython_config.py ~/.ipython/profile_default/
 
-# Install Python and other essential packages
+# Install Python, NodeJS, yarn and other essential packages
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc postgresql postgresql-contrib nodejs
+sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc postgresql postgresql-contrib nodejs yarn
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
