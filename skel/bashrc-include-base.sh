@@ -4,6 +4,9 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+# Add timestamps to bash history
+HISTTIMEFORMAT="%F %T "
+
 # Share the current directory on port 8000
 alias sharedir="python -m http.server 8000"
 
