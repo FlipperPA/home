@@ -45,4 +45,5 @@ format = """\
 """
 
 [character]
-symbol = "➜"  # New prompt
+success_symbol = "[→](bold green)"
+error_symbol = "[❌](bold red)"
