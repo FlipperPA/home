@@ -9,8 +9,6 @@ source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 source ~/skel/venv-wrapper.sh
 
-eval "$(starship init bash)"
-
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
