@@ -9,7 +9,10 @@ cp ~/skel/ipython_config.py ~/.ipython/profile_default/
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update
-sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc postgresql postgresql-contrib nodejs yarn
+sudo apt -y install python3-pip python3-venv git bash-completion tdsodbc postgresql postgresql-contrib nodejs yarn bat
+
+# symlink batcat to bat
+sudo ln -s /usr/bin/batcat /usr/bin/bat
 
 # Let user sudo without passwords.
 sudo chmod 644 /etc/sudoers
