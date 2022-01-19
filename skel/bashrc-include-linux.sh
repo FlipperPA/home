@@ -12,5 +12,3 @@ fi
 
 # Check the window size after each command and update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-PATH=$PATH:$(npm get prefix)/bin
