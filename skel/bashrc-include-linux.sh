@@ -8,7 +8,9 @@ if [ -f /etc/bash_completion.d/git ]; then
 fi
 
 # include my tokens
-. ~/.tokens/set.sh
+if [ -f ~/.tokens/set.sh ]; then
+    source ~/.tokens/set.sh
+fi
 
 # Check the window size after each command and update the values of LINES and COLUMNS.
 shopt -s checkwinsize
