@@ -5,4 +5,4 @@ source ~/skel/bashrc-include-linux.sh
 source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 
-# alias playbook='/usr/bin/ansible-playbook --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
+# alias playbook='/usr/bin/ansible-playbook --ask-vault-pass --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
