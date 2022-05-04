@@ -21,7 +21,8 @@
             "padding": "0, 0, 0, 0",
             "snapOnInput": true,
             "suppressApplicationTitle": true,
-            "useAcrylic": false
+            "useAcrylic": false,
+            "opacity": 100
         },
         "list": 
         [
