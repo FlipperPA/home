@@ -3,7 +3,7 @@ An example of my home directory. To init in a non-empty home directory:
 
 ### WSL-2 Ubuntu 20
 
-WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. WSL-10 is now the default on Windows 10, since patch 2004 in May, 2020. See: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. WSL-2 is now the default on Windows 10, since patch 2004 in May, 2020. See: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 
 ```bash
 cd ~
