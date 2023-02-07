@@ -27,18 +27,18 @@
         "list": 
         [
             {
+                "commandline": "ssh -o \"ServerAliveInterval 60\" -o \"ServerAliveCountMax 2\" tallen@wrds-pub1-dev.wharton.upenn.edu",
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b8a4b}",
+                "name": "pub1-dev",
+                "tabTitle": "pub1-dev"
+            },
+            {
                 "commandline": "wsl.exe ~ -d Ubuntu-20.04",
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
                 "tabTitle": "Ubuntu"
-            },
-            {
-                "commandline": "ssh -o \"ServerAliveInterval 60\" -o \"ServerAliveCountMax 2\" tallen@wrds-pub1-dev.wharton.upenn.edu",
-                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b8a4b}",
-                "name": "pub1-dev",
-                "tabTitle": "pub1-dev"
             },
             {
                 "commandline": "powershell.exe",
@@ -61,6 +61,12 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
             }
         ]
     },
