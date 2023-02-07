@@ -1,5 +1,7 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
     "alwaysShowTabs": true,
     "copyOnSelect": true,
     "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b8a4b}",
@@ -9,20 +11,22 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.5,
             "closeOnExit": "graceful",
             "colorScheme": "Campbell",
             "cursorColor": "#FFFFFF",
             "cursorShape": "filledBox",
-            "fontFace": "Consolas",
-            "fontSize": 11,
+            "font": 
+            {
+                "face": "Consolas",
+                "size": 11
+            },
             "historySize": 9001,
             "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+            "opacity": 100,
             "padding": "0, 0, 0, 0",
             "snapOnInput": true,
             "suppressApplicationTitle": true,
-            "useAcrylic": false,
-            "opacity": 100
+            "useAcrylic": false
         },
         "list": 
         [
@@ -33,15 +37,6 @@
                 "tabTitle": "pub1-dev"
             },
             {
-                "commandline": "wsl.exe ~ -d Ubuntu-20.04",
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "Ubuntu"
-            },
-            {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "PowerShell",
@@ -49,7 +44,6 @@
                 "tabTitle": "PowerShell"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
                 "name": "cmd",
