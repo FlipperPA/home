@@ -17,6 +17,15 @@ wsl --import Ubuntu-22.04 "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
 del D:\wsl-export-ubuntu.tar
 ```
 
+Next, create a config file with `notepad \\wsl.localhost\Ubuntu-22.04\etc\wsl.conf`, and add a default user:
+
+```
+[user]
+default = tallen
+```
+
+Then once you're booted up:
+
 ```bash
 cd ~
 git init
