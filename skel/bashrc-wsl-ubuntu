@@ -1,9 +1,5 @@
 # .bashrc
 
-# Set up variables for venvwrapper
-export VENV_HOME=~/venvs
-export VENV_PYTHON=/usr/bin/python3
-
 # Turn Django Debug Toolbar On
 export DJDT=1
 
