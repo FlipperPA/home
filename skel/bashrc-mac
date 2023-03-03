@@ -7,7 +7,6 @@ source ~/skel/bashrc-include-base.sh
 source ~/skel/bashrc-include-linux.sh
 source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
-source ~/skel/venv-wrapper.sh
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
