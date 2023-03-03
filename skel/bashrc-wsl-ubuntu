@@ -11,8 +11,4 @@ source ~/skel/bashrc-include-linux.sh
 source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 
-# sudo ntpdate time.windows.com
 sudo service postgresql start
-
-# Start tmux by default
-tmux new-session -A -s main

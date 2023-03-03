@@ -1,4 +1,4 @@
-\0;10;1c#!/bin/bash
+#!/bin/bash
 # Sets up the Windows Subsystem for Linux version of Ubuntu 20.04 for Django development
 
 # Temporary fix for pasting into IPython with Windows Terminal
