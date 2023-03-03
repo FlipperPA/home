@@ -12,7 +12,9 @@ wsl --install -d Ubuntu-22.04
 wsl -t Ubuntu-22.04
 wsl --export Ubuntu-22.04 "D:\wsl-export-ubuntu.tar"
 wsl --unregister Ubuntu-22.04
+mkdir d:\wsl
 wsl --import Ubuntu-22.04 "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
+del D:\wsl-export-ubuntu.tar
 ```
 
 ```bash
