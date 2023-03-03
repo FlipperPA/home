@@ -21,7 +21,7 @@ Next, create a config file with `notepad \\wsl.localhost\Ubuntu-22.04\etc\wsl.co
 
 ```
 [user]
-default = tallen
+default=tallen
 ```
 
 Then once you're booted up:
