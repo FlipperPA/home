@@ -22,13 +22,13 @@ git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/main
 mkdir -p projects
-mkdir -p venvs
 mkdir -p .ssh
 touch .ssh/authorized_keys
 cp skel/bashrc-wsl-ubuntu .bashrc
 sudo -s source skel/install-wsl-ubuntu.sh
+curl -sS https://raw.githubusercontent.com/FlipperPA/pyromania/main/install.sh | sh
 source .bashrc
-cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
+cd ~/projects && pyro pypi && pip install -U pip-tools twine setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
 #### Installing Newer Versions of Python on Ubuntu 16 or 18
@@ -54,10 +54,11 @@ git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/main
 cp skel/bashrc-mac .bashrc
+curl -sS https://raw.githubusercontent.com/FlipperPA/pyromania/main/install.sh | sh
 source .bashrc
 printf "\nsource ~/.bashrc\n" >> .bash_profile
 . skel/install-mac.sh
-cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
+cd ~/projects && pyro pypi && pip install -U pip-tools twine setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
 ### Generic Linux Server
@@ -68,6 +69,7 @@ git remote add origin https://github.com/FlipperPA/home.git
 git fetch
 git checkout -t origin/main
 cp skel/bashrc-linux .bashrc
+curl -sS https://raw.githubusercontent.com/FlipperPA/pyromania/main/install.sh | sh
 source .bashrc
-cd ~/projects && mkvirtualenv pypi && pip install setuptools twine wheel setuptools-scm pypi-alias && deactivate && cd ~
+cd ~/projects && pyro pypi && pip install -U pip-tools twine setuptools-scm pypi-alias && deactivate && cd ~
 ```
