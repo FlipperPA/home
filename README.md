@@ -6,11 +6,13 @@ An example of my home directory. To init in a non-empty home directory:
 Turn the `Windows Subsystem for Linux` on in the Control Panel -> Programs -> Programs & Features -> Turn Windows Features On or Off. These commands will install the VM (which defaults to C:\), then move to an alternate drive:
 
 ```powershell
-wsl --install -d Ubuntu
-wsl -t Ubuntu
-wsl --export Ubuntu "D:\wsl-export-ubuntu.tar"
-wsl --unregister Ubuntu
-wsl --import Ubuntu "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
+wsl --install
+wsl --update
+wsl --install -d Ubuntu-22.04
+wsl -t Ubuntu-22.04
+wsl --export Ubuntu-22.04 "D:\wsl-export-ubuntu.tar"
+wsl --unregister Ubuntu-22.04
+wsl --import Ubuntu-22.04 "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
 ```
 
 ```bash
