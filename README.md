@@ -1,9 +1,17 @@
 # home
 An example of my home directory. To init in a non-empty home directory:
 
-### WSL-2 Ubuntu 20
+### WSL Windows 11 Ubuntu
 
-WSL-2 contains major improvements to the speed and performance by providing a full Linux kernel. WSL-2 is now the default on Windows 10, since patch 2004 in May, 2020. See: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+Turn the `Windows Subsystem for Linux` on in the Control Panel -> Programs -> Programs & Features -> Turn Windows Features On or Off. These commands will install the VM (which defaults to C:\), then move to an alternate drive:
+
+```powershell
+wsl --install -d Ubuntu
+wsl -t Ubuntu
+wsl --export Ubuntu "D:\wsl-export-ubuntu.tar"
+wsl --unregister Ubuntu
+wsl --import Ubuntu "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
+```
 
 ```bash
 cd ~
