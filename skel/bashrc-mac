@@ -13,10 +13,10 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 cat << EOT
-To have launchd start postgresql now and restart at login:
-  brew services start postgresql
+To restart postgresql@14 after an upgrade:
+  brew services restart postgresql@14
 Or, if you don't want/need a background service you can just run:
-  pg_ctl -D /usr/local/var/postgres start
+  /opt/homebrew/opt/postgresql@14/bin/postgres -D /opt/homebrew/var/postgresql@14
 EOT
 
 # Start tmux by default
