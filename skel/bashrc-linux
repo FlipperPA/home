@@ -6,6 +6,7 @@ source ~/skel/bashrc-include-django.sh
 source ~/skel/bashrc-include-git.sh
 
 # alias playbook='/usr/bin/ansible-playbook --ask-vault-pass --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
+# alias ansible='/usr/bin/ansible --user=ansible --private-key=/etc/ansible/wrds_ansible_pdi_rsa'
 
 # Start tmux by default
 tmux new-session -A -s main
