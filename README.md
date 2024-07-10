@@ -8,16 +8,19 @@ Turn the `Windows Subsystem for Linux` on in the Control Panel -> Programs -> Pr
 ```powershell
 wsl --install
 wsl --update
-wsl --install -d Ubuntu
-wsl -t Ubuntu
-wsl --export Ubuntu "D:\wsl-export-ubuntu.tar"
-wsl --unregister Ubuntu
+wsl --install -d Ubuntu-24.04 --config 
+# A reboot is necessary here if it is a first time WSL install.
+wsl -t Ubuntu-24.04
+wsl --export Ubuntu-24.04 "D:\wsl-export-ubuntu.tar"
+wsl --unregister Ubuntu-24.04
 mkdir d:\wsl
-wsl --import Ubuntu "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
+wsl --import Ubuntu-24.04 "D:\wsl\ubuntu" "D:\wsl-export-ubuntu.tar"
 del D:\wsl-export-ubuntu.tar
 ```
 
-Next, create a config file with `notepad \\wsl.localhost\Ubuntu-22.04\etc\wsl.conf`, and add a default user:
+Next, edit the setting in Windows Terminal for `Ubuntu-24.04` and change the invocation command to be `wsl -d "Ubuntu-24.04" -u tallen`.
+
+Alternately, you could create a config file with `notepad \\wsl.localhost\Ubuntu-22.04\etc\wsl.conf`, and add a default user:
 
 ```
 [user]
