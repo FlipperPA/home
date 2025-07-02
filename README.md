@@ -73,7 +73,7 @@ source .bashrc
 cd ~/projects && pyro pypi && pip install -U pip-tools twine setuptools-scm pypi-alias && deactivate && cd ~
 ```
 
-#### Installing Newer Versions of Python on Ubuntu 16 or 18
+#### Installing Newer Versions of Python on Ubuntu
 
 ```bash
 # Update apt and install SPC
@@ -83,7 +83,7 @@ sudo apt install software-properties-common
 # Add the respository for newer Python
 sudo add-apt-repository ppa:deadsnakes/ppa
 
-# Update again, and install Python 3.8
+# Update again, and install Python 3.13
 sudo apt update
-sudo apt install python3.8 python3.8-dev python3.8-venv python3.8-distutils
+sudo apt install python3.13 python3.13-dev python3.13-venv python3.13-distutils
 ```
