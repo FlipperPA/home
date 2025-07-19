@@ -4,7 +4,6 @@
 ;; --------------------------------------
 
 (setq inhibit-startup-message t) ;; hide the startup message
-(global-linum-mode t) ;; enable line numbers globally
 (setq column-number-mode t) ;; enable column numbers in status bar
 
 ;; Adhere to Python black's 88 character limit per line
