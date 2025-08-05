@@ -18,6 +18,3 @@ To restart postgresql@14 after an upgrade:
 Or, if you don't want/need a background service you can just run:
   /opt/homebrew/opt/postgresql@14/bin/postgres -D /opt/homebrew/var/postgresql@14
 EOT
-
-# Start tmux by default
-tmux new-session -A -s tallen
