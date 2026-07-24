@@ -2,6 +2,11 @@
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
+# ssh server shortcuts
+s() {
+    python ~/skel/ssh.py "$@"
+}
+
 # git tab completion
 if [ -f /etc/bash_completion.d/git ]; then
     source /etc/bash_completion.d/git
