@@ -51,7 +51,7 @@
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "github.copilot.editor.enableAutoCompletions": true,
     "git.openRepositoryInParentFolders": "never",
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    "js/ts.updateImportsOnFileMove.enabled": "always",
     "pgsql.connections": [
         {
             "host": "localhost",
