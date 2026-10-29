@@ -1,0 +1,67 @@
+{
+    "chat.tools.urls.autoApprove": {
+        "https://code.visualstudio.com": true,
+        "https://github.com/microsoft/vscode/wiki/*": true,
+        "https://docs.djangoproject.com": {
+            "approveRequest": false,
+            "approveResponse": true
+        },
+        "https://web.archive.org": true,
+        "https://raw.githubusercontent.com": {
+            "approveRequest": false,
+            "approveResponse": true
+        }
+    },
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 88,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.ignoreLegacyWarning": true,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "python.formatting.provider": "black",
+    "remote.SSH.remotePlatform": {
+        "wrds-cloud.wharton.upenn.edu": "linux",
+        "wrds-labs.wharton.upenn.edu": "linux",
+        "wrds-www-dev.wharton.upenn.edu": "linux"
+    },
+    "terminal.integrated.initialHint": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.localEchoLatencyThreshold": -1,
+    "terminal.integrated.scrollback": 25000,
+    "terminal.integrated.allowChords": false,
+    "window.openFoldersInNewWindow": "off",
+    "workbench.colorTheme": "Dreamscape",
+    "workbench.startupEditor": "newUntitledFile",
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "git.openRepositoryInParentFolders": "never",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "pgsql.connections": [
+        {
+            "host": "localhost",
+            "dbname": "spre_data",
+            "user": "spre_data_user",
+            "password": "",
+            "emptyPasswordInput": true,
+            "port": "5432",
+            "profileName": "SPRE Data"
+        }
+    ],
+    "sqltools.connections": [],
+}
